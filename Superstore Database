@@ -29,18 +29,22 @@ VALUES
 #Use a SELECT statement to order items by price.
 SELECT item_name, price
 FROM superstore
-ORDER BY price;
+ORDER BY price
+;
 
 #Show a statistic about the item prices.
 SELECT SUM (price)
-FROM superstore;
+FROM superstore
+;
 
 #Show a statistic about the price for items in the category "Kitchen Supplies".
 SELECT MAX (price)
 FROM superstore
-WHERE category='Kitchen Supplies';
+WHERE category='Kitchen Supplies'
+;
 
 #Create your own question: What is the average price of items in the category "Electronics"?
 SELECT AVG (price)
 FROM superstore
-WHERE category='Electronics';
+WHERE category='Electronics'
+;
